@@ -66,9 +66,9 @@ def ID3DT(feature, target):
                     p1 = sum(target[G1]==1)#為1的個數
                     n1 = sum(target[G1]==0)
                     p2 = sum(target[G2]==1)
-                    p1 = sum(target[G2]==0)
+                    n2 = sum(target[G2]==0)
                     thisIG = IG(p1,n1,p2,n2)
-                    if(thisIG>bestIG):
+                    if thisIG>bestIG:
                         bestIG = thisIG
                         bestG1 = G1
                         bestG2 = G2
